@@ -1,5 +1,7 @@
 # BigQuery Data Modelling
 
+![Image](https://github.com/user-attachments/assets/e7a0b89d-144b-407d-b88d-d55ff273353f)
+
 BigQuery data modelling and database design project
 
 # 🏋️‍♂️ Personal Training Database — BigQuery Example
