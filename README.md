@@ -18,7 +18,7 @@ This project demonstrates **data modeling and database design in BigQuery**, usi
 |---------------------------|-----------------------------------------------------------------------------|
 | `personal_trainer_schema.sql` | Creates all necessary tables with appropriate keys and constraints.         |
 | `inserts.sql` | Inserts synthetic data into all core tables to simulate a real-world workflow. |
-| `analysus.sql` | Provides useful queries for analysis in BigQuery-native SQL. |
+| `analysis.sql` | Provides useful queries for analysis in BigQuery-native SQL. |
 
 ---
 
