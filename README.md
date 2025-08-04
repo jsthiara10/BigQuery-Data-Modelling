@@ -40,6 +40,10 @@ The schema consists of 7 interconnected tables:
 
 ![Image](https://github.com/user-attachments/assets/897d9863-a789-43de-ae82-6f846d1300cc)
 
+Here is an Entity-Relationship diagram which visually describes how the tables in our database are connected
+
+For example, Athletes table connects to the Nutrition log table via the Foreign Key of athlete_id
+
 ---
 
 ## 🛠️ BigQuery-Specific Features Used
