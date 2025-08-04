@@ -44,9 +44,9 @@ Here is a simplified Entity-Relationship diagram which visually describes how th
 
 For example, Athletes table connects to the Nutrition log table via the Foreign Key of athlete_id
 
-**PK: Primary Key ** (unique identifier for rows in that specific table)
+**PK:Primary Key** (unique identifier for rows in that specific table)
 
-**FK: Foreign Key **  (key that links one table to the other)
+**FK:Foreign Key**   (key that links one table to the other)
 
 ---
 
