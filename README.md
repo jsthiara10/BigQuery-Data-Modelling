@@ -36,6 +36,12 @@ The schema consists of 7 interconnected tables:
 
 ---
 
+## Entity-Relationship Diagram
+
+![Image](https://github.com/user-attachments/assets/897d9863-a789-43de-ae82-6f846d1300cc)
+
+---
+
 ## 🛠️ BigQuery-Specific Features Used
 
 - ✅ `CREATE TABLE IF NOT EXISTS`: Ensures idempotent table creation.
