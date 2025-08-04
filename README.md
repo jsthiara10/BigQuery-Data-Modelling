@@ -44,9 +44,9 @@ Here is an Entity-Relationship diagram which visually describes how the tables i
 
 For example, Athletes table connects to the Nutrition log table via the Foreign Key of athlete_id
 
-**PK:** Primary Key** (unique identifier for rows in that specific table)
+**PK: Primary Key ** (unique identifier for rows in that specific table)
 
-**FK:** Foreign Key ** (key that links one table to the other)
+**FK: Foreign Key **  (key that links one table to the other)
 
 ---
 
@@ -71,6 +71,8 @@ This schema was kept lean for clarity, but the following additions could enhance
 ---
 
 ## 🚀 Getting Started
+
+**Important: Please change the project name prefix to reflect your unique project name in Google Cloud e.g. atomic-lens-467915-q7**
 
 To get started:
 1. Create a new dataset in BigQuery (e.g., `personal_training`)
