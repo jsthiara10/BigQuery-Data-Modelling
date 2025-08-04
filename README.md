@@ -18,7 +18,7 @@ This project demonstrates **data modeling and database design in BigQuery**, usi
 |---------------------------|-----------------------------------------------------------------------------|
 | `personal_trainer_schema.sql` | Creates all necessary tables with appropriate keys and constraints.         |
 | `inserts.sql` | Inserts synthetic data into all core tables to simulate a real-world workflow. |
-| `analysus.sql` | Provides useful queries for analysis in BigQuery-native SQL. |
+| `analysis.sql` | Provides useful queries for analysis in BigQuery-native SQL. |
 
 ---
 
@@ -33,6 +33,20 @@ The schema consists of 7 interconnected tables:
 5. `workout_details`: Breakdown of exercises performed during each workout.
 6. `exercises`: Exercise reference table.
 7. `nutrition_log`: Daily calorie and macronutrient tracking.
+
+---
+
+## Entity-Relationship Diagram
+
+Here is a simplified Entity-Relationship diagram which visually describes how the tables in our database are connected
+
+![Image](https://github.com/user-attachments/assets/897d9863-a789-43de-ae82-6f846d1300cc)
+
+For example, Athletes table connects to the Nutrition log table via the Foreign Key of athlete_id
+
+**PK:Primary Key** (unique identifier for rows in that specific table)
+
+**FK:Foreign Key**   (key that links one table to the other)
 
 ---
 
@@ -57,6 +71,8 @@ This schema was kept lean for clarity, but the following additions could enhance
 ---
 
 ## 🚀 Getting Started
+
+**Important: Please change the project name prefix to reflect your unique project name in Google Cloud e.g. atomic-lens-467915-q7**
 
 To get started:
 1. Create a new dataset in BigQuery (e.g., `personal_training`)
