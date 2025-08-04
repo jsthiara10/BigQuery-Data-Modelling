@@ -16,12 +16,9 @@ This project demonstrates **data modeling and database design in BigQuery**, usi
 
 | File                      | Description                                                                 |
 |---------------------------|-----------------------------------------------------------------------------|
-| `personaltrainer_schema.sql` | Creates all necessary tables with appropriate keys and constraints.         |
-| `initial_athlete_inserts.sql` | Inserts synthetic data into all core tables to simulate a real-world workflow. |
-
-Coming soon:  
-- 📈 `exploratory_analysis.sql`: Example queries using joins, window functions, aggregation, and filtering.
-- 📊 `reporting_views.sql`: Views for dashboards and analytics.
+| `personal_trainer_schema.sql` | Creates all necessary tables with appropriate keys and constraints.         |
+| `inserts.sql` | Inserts synthetic data into all core tables to simulate a real-world workflow. |
+| `analysus.sql` | Provides useful queries for analysis in BigQuery-native SQL. |
 
 ---
 
@@ -64,8 +61,8 @@ This schema was kept lean for clarity, but the following additions could enhance
 To get started:
 1. Create a new dataset in BigQuery (e.g., `personal_training`)
 2. Run `personaltrainer_schema.sql` to create all tables
-3. Run `initial_athlete_inserts.sql` to populate with sample data
-4. Use the `exploratory_analysis.sql` (coming soon) to practice querying, filtering, ranking, and more.
+3. Run `inserts.sql` to populate with sample data
+4. Use the `analysis.sql` to practice querying, aggregation, ranking, and more.
 
 ---
 
@@ -82,6 +79,6 @@ This project demonstrates good practices in **normalisation, schema clarity, and
 
 ## 📬 Contact
 
-TBC
+Jasraj Singh Thiara https://www.linkedin.com/in/jasrajsinghthiara/
 
 Feel free to fork, modify, or submit issues and suggestions. Future contributions and dataset expansions are welcome!
