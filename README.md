@@ -35,6 +35,79 @@ The schema consists of 7 interconnected tables:
 7. `nutrition_log`: Daily calorie and macronutrient tracking.
 
 ---
+## Entity-Relationship Diagram
+
++---------------------+
+|      programs       |
++---------------------+
+| program_id (PK)     |
+| program_name        |
+| goal                |
+| description         |
++---------------------+
+
+           ▲
+           │
+           │
++---------------------------+
+|     athlete_programs      |
++---------------------------+
+| athlete_id (PK, FK)       |
+| program_id (PK, FK)       |
+| start_date                |
++---------------------------+
+           ▲
+           │
+           │
++----------------------------+
+|         athletes           |
++----------------------------+
+| athlete_id (PK)            |
+| name                       |
+| surname                    |
+| address                    |
+| age                        |
+| height_cm                  |
+| weight_kg                  |
+| gender                     |
+| training_history           |
++----------------------------+
+       ▲            ▲
+       │            │
+       │            │
++------------------+     +------------------------+
+|   workout_log    |     |     nutrition_log      |
++------------------+     +------------------------+
+| workout_id (PK)  |     | log_id (PK)            |
+| athlete_id (FK)  |     | athlete_id (FK)        |
+| workout_date     |     | log_date               |
+| duration_minutes |     | calories               |
+| notes            |     | protein_grams          |
++------------------+     | carbs_grams            |
+                         | fat_grams              |
+                         +------------------------+
+           ▲
+           │
++-------------------------+
+|     workout_details     |
++-------------------------+
+| workout_id (FK)         |
+| exercise_id (FK)        |
+| sets                    |
+| reps                    |
+| weight_kg               |
++-------------------------+
+           ▲
+           │
++-------------------------+
+|       exercises         |
++-------------------------+
+| exercise_id (PK)        |
+| exercise_name           |
+| category                |
+| description             |
++-------------------------+
+---
 
 ## 🛠️ BigQuery-Specific Features Used
 
